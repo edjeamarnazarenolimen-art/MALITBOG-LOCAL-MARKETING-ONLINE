@@ -1,25 +1,39 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fresh Market | Local Products</title>
-  <link rel="stylesheet" href="StyleSheet.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <h1>Fresh Market</h1>
-    <p>Good things, grown and made close to home.</p>
+    <div class="header-topline">
+      <div>
+        <h1>Fresh Market</h1>
+        <p>Good things, grown and made close to home.</p>
+      </div>
+      <div class="header-controls">
+        <label class="language-picker" for="language-select">
+          <span id="language-label">Language:</span>
+          <select id="language-select" aria-label="Choose language">
+            <option value="en">English</option>
+            <option value="tl">Tagalog</option>
+            <option value="ceb">Bisaya</option>
+          </select>
+        </label>
+      </div>
+    </div>
   </header>
   <div class="page-navigation">
-    <label for="navigation">Explore:</label>
+    <label for="navigation" id="navigation-label">Explore:</label>
     <select id="navigation" aria-label="Navigation">
       <option value="Home">Market</option>
       <option value="About">About</option>
       <option value="Contact">Contact</option>
       <option value="Chats">Chats</option>
     </select>
-    <button id="account-navigation" class="account-navigation" type="button">Create an account / Gumawa ng account</button>
+    <button id="account-navigation" class="account-navigation" type="button">Create an account</button>
   </div>
 
   <main id="page-content" aria-live="polite">
